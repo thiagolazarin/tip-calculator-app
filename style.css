@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+}
+
+body{
+    background-color: hsl(185, 41%, 84%);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 730px;
+    min-width: 320px;
+    height: auto;
+    margin: 173px auto;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+}
+
+.box-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 400px;
+    padding: 40px;
+}
+
+.container-inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    width: 100%;
+}
+
+.container-inputs .inputs{
+    position: relative;
+}
+
+.img-inputs{
+    position: absolute;
+    bottom: 10px;
+    left: 8px;
+    width: 10px;
+}
+
+.container-inputs .inputs .text-peoples {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    width: 88%;
+}
+
+.container-inputs .inputs .text-peoples > p{
+    color: hsl(184, 14%, 56%);
+}
+
+.container-inputs .inputs .text-peoples > label {
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+
+.container-inputs .inputs > p {
+    color: hsl(184, 14%, 56%);
+}
+
+.container-inputs .inputs > input{
+    width: 88%;
+    padding: 7px;
+    cursor: pointer;
+    border: 1px solid hsl(172, 67%, 45%);
+    background-color: hsl(189, 41%, 97%);
+    border-radius: 5px;
+    text-align: right;
+}
+
+.container-inputs .inputs > input:hover{
+    border: 2.2px solid hsl(172, 67%, 45%);
+}
+
+.container-inputs .inputs.buttons > button{
+    width: 88px;
+    padding: 7px;
+    margin-bottom: 10px;
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.container-inputs .inputs.buttons > button:hover{
+    background-color: hsl(172, 67%, 45%);
+}
+
+/* .container-inputs .inputs.buttons #custom{
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(184, 14%, 56%);
+    width: 88px;
+    padding: 7px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+}
+
+.container-inputs .inputs.buttons #custom::-webkit-outer-spin-button,
+.container-inputs .inputs.buttons #custom::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+} */
+
+/*--------------------------------------------------------------------*/
+
+.container-results{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 100%;
+    background-color: hsl(183, 100%, 15%);
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.container-results .tips{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
+.container-tips{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 123px;
+}
+
+.container-results .tips-text > p{
+    color: hsl(189, 41%, 97%);
+    font-size: 14px;
+}
+
+.container-results .tips-text > label{
+    display: flex;
+    color: hsl(184, 14%, 56%);
+    font-size: 10px;
+}
+
+.container-results .tips-results > h1{
+    color: hsl(172, 67%, 45%);
+}
+
+.container-results button{
+    padding: 7px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.container-results button:hover{
+    background-color: hsl(185, 41%, 84%);
+}
+
+@media screen and (max-width: 430px){
+    .box-container{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .container-results{
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 485px) and (max-width: 480px){
+    .container-inputs .inputs.buttons > button{
+        width: 80px;
+    }
+    .container-results{
+        margin-top: 10px;
+    }
+}
